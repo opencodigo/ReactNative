@@ -32,4 +32,44 @@ export default Boton
 
 npm install react-native-elements
 
+::: destructuramos los elementos a usar de forma personalizada :::
+
+import React from "react";
+import { Button } from "react-native-elements";
+import Icon from "react-native-vector-icons/FontAwesome";
+import { Dimensions } from "react-native";
+
+const Boton = (props) => {
+  let {
+    texto,
+    iconName,
+    iconColor,
+    iconSize,
+    setWidth,
+    bgColor,
+    action, fullWidth
+  } = props;
+
+  const { width } = fullWidth ? Dimensions.get("window") : {};
+  console.log(width);
+
+  return (
+    <Button
+    onPress={action}
+      title={texto}
+      buttonStyle={{
+        width: width,
+        backgroundColor: bgColor
+      }}
+      type="solid"
+      icon={<Icon name={iconName} size={iconSize} color={iconColor} />}
+    />
+    
+  );
+};
+
+export default Boton;
+
+
+
 
