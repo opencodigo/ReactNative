@@ -81,3 +81,33 @@ export default Boton;
 ------- Para crear componentes de carga por ejemplo creamos un nuevo componente ----------
 src/components/Preload.js ->
 
+
+
+
+
+
+
+ {/* 
+    <View style={styles.container}>
+        <Text>Hola! Bienvenido a OpenCodigo</Text>
+      <Boton texto={"click Aqui"}
+      iconName={"arrow-right"}
+      iconSize={15}
+      iconColor={"#fff"}
+      fullwidth={true}
+      bgColor={"#ccc"}
+      action={()=>{
+        console.log("click!");
+        
+      }}
+      />      
+
+      <PreLoader/>
+      
+      <BackgroundImage recurso={require('./assets/img/ceviche.jpg')}>
+      <Text> Hola!</Text>
+      </BackgroundImage> 
+      
+      
+      </View>
+    */}
