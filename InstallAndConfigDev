@@ -1,0 +1,35 @@
+Primero instalamos la libreria:
+
+Assuming that you have Node 10 LTS or greater installed, you can use npm to install the Expo CLI command line utility:
+
+npm install -g expo-cli
+
+expo init [nombre_proyecto]
+
+cd [nombre_carpeta]
+
+npm start 
+----------Algunas configuraciones que podemos hacer para nuestros componentes-----------
+Creamos la carpeta:
+src:
+  -> components
+      ->Boton.js
+        : usamos el comando: rnf
+        import React from 'react'
+import { Button } from 'react-native'
+
+const Boton = () => {
+    let {texto, iconName, iconColor, iconSize} = props;
+    return (
+        <Button title={texto}/>
+    )
+}
+
+export default Boton
+
+
+----------Luego instalamos las librerias para los estilos-------------
+
+npm install react-native-elements
+
+
