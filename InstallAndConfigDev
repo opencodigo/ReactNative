@@ -9,6 +9,12 @@ expo init [nombre_proyecto]
 cd [nombre_carpeta]
 
 npm start 
+
+##############################################################
+IMPORTANTE: Para emular la aplicacion usar
+EXPO es una aplicacion en el Play Store
+##############################################################
+
 ----------Algunas configuraciones que podemos hacer para nuestros componentes-----------
 Creamos la carpeta:
 src:
@@ -71,5 +77,6 @@ const Boton = (props) => {
 export default Boton;
 
 
-
+------- Para crear componentes de carga por ejemplo creamos un nuevo componente ----------
+src/components/Preload.js ->
 
